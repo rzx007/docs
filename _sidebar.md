@@ -1,9 +1,8 @@
-- **介绍**
-	- [关于CSS Tricks](zh-cn/introduce.md?v=1)
-- **边框与背景**
-	- [半透明边框](zh-cn/translucent-borders.md)
-	- [多重边框](zh-cn/multiple-borders.md)
-	- [边框内圆角](zh-cn/inner-rounding.md)
-	- [背景定位](zh-cn/extended-bg-position.md)
-	- [条纹背景](zh-cn/stripes-background.md)
-	- [1px 线/边](zh-cn/one-pixel-line.md)
+- **编码规范**
+	- [html规范](/html-standard.md)
+	- [css规范](/css-standard.md)
+	- [JavaScript规范](/js-standard.md)
+- **项目结构规范**
+	- [目录结构](/dir-standard.md)
+- **现有AXE项目前端问题**
+	- [问题及解决方案](/axe-problem.md)

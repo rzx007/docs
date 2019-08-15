@@ -1,4 +1,0 @@
-trigger_build:
-  stage: deploy
-  script:
-    - "curl -X POST -F token=6059838a5736aa9ba0b0e98ca6e544 -F ref=REF_NAME http://10.172.246.235/api/v4/projects/123/trigger/pipeline"
