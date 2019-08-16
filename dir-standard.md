@@ -37,11 +37,11 @@
         └─utils         //工具方法集合
     |─.browserslistrc
     |─.eslintrc.js
-    |─.gitignore
+    |─.gitignore        // 提交代码时候需要配置的忽略提交的代码目录
     |─babel.config.js
     |─package.json      //项目所有的依赖项都在此文件，相关打包命令也在这
     |─postcss.config.json
-    |─README.md
+    |─README.md         // 展示项目基本用法功能的说明性文件  
     |─vue.config.js     //vue-cli3脚手架配置项
     
 ```
