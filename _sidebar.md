@@ -5,6 +5,7 @@
 	- [css规范](/css-standard.md)
 	- [JavaScript规范](/js-standard.md)
 	- [VUEJS开发规范](/vue.md)
+	- [vue-router动态加载](/vue-router.md)
 - **项目结构规范**
 	- [目录结构](/dir-standard.md)
 	- [ui框架和工具](/ui.md)
