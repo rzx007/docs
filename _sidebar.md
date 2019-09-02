@@ -11,6 +11,7 @@
 	- [ui框架和工具](/ui.md)
 - **现有AXE项目前端问题**
 	- [问题及解决方案](/axe-problem.md)
+	- [执行步骤和计划](/axe-solve.md)
 	- [文档执行](/execute.md)
 - **前端主流开发框架**
 	- [开发框架](/frame.md)
