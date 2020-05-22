@@ -2,7 +2,7 @@
 
 !> 基于[Vue](https://cn.vuejs.org/)的ui组件框架：
 
-?> 1. [Element-ui](https://element.eleme.cn/#/zh-CN)
+?> 1. [Element-UI](https://element.eleme.cn/#/zh-CN)
 
 ?> 2. [iView](https://www.iviewui.com/)
 

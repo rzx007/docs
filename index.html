@@ -9,6 +9,7 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  
 </head>
 
 <body>
@@ -18,7 +19,7 @@
       name: '前端开发规范手册',
       repo: 'https://github.com/rzx007',
       loadSidebar: true,
-      // coverpage: true,
+      coverpage: true,
       search: {
         noData: {
           "/zh-cn/": "找不到结果!",
@@ -30,6 +31,11 @@
           "/": "Search"
         }
       },
+    }
+  </script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>

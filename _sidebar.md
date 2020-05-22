@@ -1,18 +1,19 @@
-- **AXE项目介绍**
-	- [介绍](/introduce.md)
-- **编码规范**
-	- [html规范](/html-standard.md)
-	- [css规范](/css-standard.md)
-	- [JavaScript规范](/js-standard.md)
-	- [VUEJS开发规范](/vue.md)
+- **HTML 相关**
+	- [html规范](/html/html-standard.md)
+- **CSS 相关**
+	- [css规范](/css/css-standard.md)
+- **Javascript 相关**
+	- [javaScript规范](/js/js-standard.md)
+	- [JavaScript常用数组去重](/js/js-arrayset.md)
+	- [JavaScript常用拷贝数组技巧](/js/js-arrayslice.md)
+- **Vue 相关**
+	- [vue开发规范](/vue.md)
 	- [vue-router动态加载](/vue-router.md)
+	- [vue组件的动态注册和动态加载](/vue-dynamic-component.md)
+- **React 相关**
 - **项目结构规范**
 	- [目录结构](/dir-standard.md)
 	- [ui框架和工具](/ui.md)
-- **现有AXE项目前端问题**
-	- [问题及解决方案](/axe-problem.md)
-	- [执行步骤和计划](/axe-solve.md)
-	- [文档执行](/execute.md)
 - **前端主流开发框架**
 	- [开发框架](/frame.md)
 
