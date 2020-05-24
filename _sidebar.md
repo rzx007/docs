@@ -3,13 +3,16 @@
 - **CSS 相关**
 	- [css规范](/css/css-standard.md)
 - **Javascript 相关**
-	- [javaScript规范](/js/js-standard.md)
-	- [JavaScript常用数组去重](/js/js-arrayset.md)
-	- [JavaScript常用拷贝数组技巧](/js/js-arrayslice.md)
+	- [开发规范](/js/js-standard.md)
+	- [常用数组去重](/js/js-arrayset.md)
+	- [常用拷贝数组技巧](/js/js-arrayslice.md)
+	- [发布订阅模式与观察者模式](/js/js-observer.md)
 - **Vue 相关**
-	- [vue开发规范](/vue.md)
-	- [vue-router动态加载](/vue-router.md)
-	- [vue组件的动态注册和动态加载](/vue-dynamic-component.md)
+	- [开发规范](/vue/vue.md)
+	- [vue-router动态加载](/vue/vue-router.md)
+	- [组件的动态注册和动态加载](/vue/vue-dynamic-component.md)
+	- [render函数](/vue/vue-render-function.md)
+	- [浅析虚拟dom原理并实现](/vue/vue-vritual-dom.md)
 - **React 相关**
 - **项目结构规范**
 	- [目录结构](/dir-standard.md)
