@@ -7,6 +7,8 @@
 	- [常用数组去重](/js/js-arrayset.md)
 	- [常用拷贝数组技巧](/js/js-arrayslice.md)
 	- [发布订阅模式与观察者模式](/js/js-observer.md)
+	- [js中绑定this的几种方法](/js/js-bindthis.md)
+	- [js常用es6+代码](/js/js-es6.md)
 - **Vue 相关**
 	- [开发规范](/vue/vue.md)
 	- [vue-router动态加载](/vue/vue-router.md)
