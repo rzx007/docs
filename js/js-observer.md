@@ -167,3 +167,48 @@
 如果以结构来分辨模式，发布订阅模式相比观察者模式多了一个中间件订阅器，所以发布订阅模式是不同于观察者模式的；如果以意图来分辨模式，他们都是实现了对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知，并自动更新，那么他们就是同一种模式，发布订阅模式是在观察者模式的基础上做的优化升级。
 
 不过，不管他们是不是同一个设计模式，他们的实现方式确实有差别，我们在使用的时候应该根据场景来判断选择哪个。
+
+### 实现自定义事件
+?>用JavaScript的话来说，观察者模式的实质就是你可以对程序中某个对象的状态进行观察，并且在其发生改变时能够得到通知。
+
+#### 利用观察者模式可以很容易的实现自定义事件，具体代码如下
+```js
+var Event=function() {
+  this.subscibers={};//保存事件的回调函数  
+};
+Event.prototype={
+    constructor:Event,//保持原型链的完整
+    on:function(type,callback) {  //绑定事件
+        this.subscibers[type]=[];
+        this.subscibers[type].push(callback);
+      } else {
+        this.subscibers[type].push(callback);
+      }
+    },
+    off:function(type) {  //移除事件
+      this.subscibers[type]=[];
+    },
+    emit:function(type) { //触发事件
+      var t=this;
+      if(typeof this.subscibers[type]=='object') {
+        this.subscibers[type].forEach(function(fn,i) {
+          fn.call(t);
+        });
+      } 
+    }
+};
+
+var s=new Event();
+s.title='测试自定义事件';
+
+s.on('change.title',function() {
+  console.log(this.title);
+});
+
+s.setTitle=function(value) {
+  this.title=value;
+  this.emit('change.title')
+};
+
+s.setTitle('属性发生了变化');
+```

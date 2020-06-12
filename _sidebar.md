@@ -9,6 +9,7 @@
 	- [发布订阅模式与观察者模式](/js/js-observer.md)
 	- [js中绑定this的几种方法](/js/js-bindthis.md)
 	- [js常用es6+代码](/js/js-es6.md)
+	- [ts装饰器](/js/js-decorators.md)
 - **Vue 相关**
 	- [开发规范](/vue/vue.md)
 	- [vue-router动态加载](/vue/vue-router.md)
@@ -16,9 +17,12 @@
 	- [render函数](/vue/vue-render-function.md)
 	- [浅析虚拟dom原理并实现](/vue/vue-vritual-dom.md)
 - **React 相关**
+- **Angular 相关**
+	- [Angular基础](/angular/angular-basic.md)
 - **项目结构规范**
 	- [目录结构](/dir-standard.md)
 	- [ui框架和工具](/ui.md)
 - **前端主流开发框架**
 	- [开发框架](/frame.md)
-
+- **Python学习**
+	-  [python基础](python/py-basic.md)

@@ -204,3 +204,24 @@ console.log(unique(arr));
 [...new Set(arr)] 
 //代码就是这么少----（其实，严格来说并不算是一种，相对于第一种方法来说只是简化了代码）
 ```
+
+### 判断一个对象是否为空
+
+#### １．最常见的思路，for...in...遍历属性，为真则为“非空数组”；否则为“空数组”
+
+```js
+function judgeObj(obj){
+    for (let ket in obj){
+        return alter('非空')
+    }
+    return alert("空对象")
+}
+```
+#### 2.通过JSON自带的.stringify方法来判断：
+```js
+JSON.stringify(obj)==='{}'
+```
+####  3.ES6新增的方法Object.keys():
+```js
+Object.keys(obj).length==0
+```
