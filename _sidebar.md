@@ -16,6 +16,7 @@
 	- [组件的动态注册和动态加载](/vue/vue-dynamic-component.md)
 	- [render函数](/vue/vue-render-function.md)
 	- [浅析虚拟dom原理并实现](/vue/vue-vritual-dom.md)
+	- [Vue3.0](/vue/vue3.0.md)
 - **React 相关**
 	- [Redux 使用流程与个人心得](/react/re-redux.md)		
 - **Angular 相关**
