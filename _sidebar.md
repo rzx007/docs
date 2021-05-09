@@ -31,4 +31,6 @@
 - **前端主流开发框架**
 	- [开发框架](/frame.md)
 - **Python学习**
-	-  [python基础](python/py-basic.md)
+	-  [python基础](/python/py-basic.md)
+- **MongoDB**
+	-  [MongoDB安装(window)](MongoDB/mongo-basic.md)
