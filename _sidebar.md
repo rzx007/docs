@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: rzx007
- * @LastEditTime: 2021-05-24 16:43:28
+ * @LastEditTime: 2021-05-24 22:26:26
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -45,3 +45,4 @@
 - **Flutter相关**
 	-  [Dart快速入门](flutter/dart-basic.md)
 	-  [Dart 类 Class、继承、多态](flutter/dart-class.md)
+	-  [Dart 泛型方法、泛型类、泛型接口](flutter/dart-generic.md)

@@ -1,6 +1,6 @@
 ## 类
 
-?> `Dart` 是一种基于类和 `mixin` 继承机制的面向对象的语言。 每个对象都是一个类的实例，所有的类都继承于 `Object`. 。 基于 _ `Mixin` 继承_ 意味着每个类（除 `Object` 外） 都只有一个超类， 一个类中的代码可以在其他多个继承类中重复使用。
+?> [Dart](http://www.ptbird.cn/dart-class.html) 是一种基于类和 `mixin` 继承机制的面向对象的语言。 每个对象都是一个类的实例，所有的类都继承于 `Object`. 。 基于 _ `Mixin` 继承_ 意味着每个类（除 `Object` 外） 都只有一个超类， 一个类中的代码可以在其他多个继承类中重复使用。
 
 ### 一、类的声明与使用
 
@@ -541,3 +541,52 @@ void main() {
 }
 ```
 输出结果：
+
+### 十、 mixin
+
+因为没有多继承，因此如果要综合多个类属性和方法可以 implements 多个接口，如果不是抽象类，则可以通过 mixin 混入多个类的属性和方法。
+```dart
+class A {
+  void fnA() {
+    print('fnA');
+  }
+
+  void run() {
+    print('runA');
+  }
+}
+
+abstract class B {
+  void fnB() {
+    print('fnB');
+  }
+
+  void run() {
+    print('runB');
+  }
+}
+
+class C extends Object with A, B {
+  void fnA() {
+    print('C_fnA');
+  }
+}
+
+/**
+ * - mixin 类只能继承自 object
+ * - mixin 类不能有构造函数
+ * - 一个类能够 mixin 多个 mixin 类
+  */
+void main() {
+  print('----- mixin ------');
+  print('-----dart 没有多继承------');
+  C c = new C();
+  c.fnA();
+  c.fnB();
+  c.run();
+  print('-----类型------');
+  print(c is C);
+  print(c is A);
+  print(c is B);
+}
+```
