@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: rzx007
- * @LastEditTime: 2021-05-24 22:26:26
+ * @LastEditTime: 2021-05-31 14:47:43
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -16,6 +16,7 @@
 	- [常用拷贝数组技巧](/js/js-arrayslice.md)
 	- [发布订阅模式与观察者模式](/js/js-observer.md)
 	- [js中绑定this的几种方法](/js/js-bindthis.md)
+	- [js事件循环](/js/js-eventloop.md)
 	- [js常用es6+代码](/js/js-es6.md)
 	- [ts装饰器](/js/js-decorators.md)
 - **Vue 相关**
