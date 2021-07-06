@@ -20,7 +20,7 @@
 
 ?> 2. [iView WeApp](https://github.com/TalkingData/iview-weapp)
 
-?> 3. [ZanUI WeApp](https://github.com/youzan/zanui-weapp)
+?> 3. [ZanUI WeApp](https://github.com/youzan/vant-weapp)
 
 ?> 4. [MinUI](https://github.com/meili/minui)
 

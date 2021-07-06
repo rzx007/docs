@@ -99,6 +99,55 @@ console.log('script end');
 
 ![dir](../static/eventloop2.jpg)
 
+?> 再来一个
+
+```js
+async function async1() {
+    console.log('2');
+    await async2();
+    console.log('6');
+}
+async function async2() {
+	console.log('3');
+}
+
+console.log('1');
+
+setTimeout(function() {
+    console.log('8');
+}, 0)
+
+async1();
+
+new Promise(function(resolve) {
+    console.log('4');
+    resolve();
+}).then(function() {
+    console.log('7');
+});
+console.log('5');
+```
+由于因为async await 本身就是promise+generator的语法糖。所以await后面的代码是microtask。所以对于本题中的
+```js
+async function async1() {
+	console.log('async1 start');
+	await async2();
+	console.log('async1 end');
+}
+```
+等价于
+```js
+async function async1() {
+	console.log('async1 start');
+	Promise.resolve(async2()).then(() => {
+                console.log('async1 end');
+        })
+}
+```
+结果
+```
+1,2,3,4,5,6,7,8
+```
 #### 总结
 
 从规范来看，microtask 优先于 task（ macro task） 执行，所以如果有需要优先执行的逻辑，放入microtask 队列会比 task（ macro task） 更早的被执行。
