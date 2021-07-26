@@ -53,7 +53,7 @@ user:'admin', pwd:'123456', roles:[{role:'root',db:'admin'}]
 路径：C:\Program Files\MongoDB\Server\4.0\bin\mongod.cfg
 配置：
 security:
-authorization:enabled
+authorization: enabled # 注意：后面有空格
 ```
 
 ?> 找到安装目录下bin文件夹下的`mongod.cfg`文件,修改`security`,添加`authorization:enabled`
