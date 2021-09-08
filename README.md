@@ -24,7 +24,8 @@
 对于现有AXE项目前端部分的不规范处，`主要体现在整体页面视觉效果统一，部分功能布局比较随意，功能细节上缺少打磨`，
 为了解决这些问题，此文档也会将这些问题罗列出来，并给出一个处理方案，如有不对或者不合适的地方请及时提出, 经讨论决定后方可更改. 
 
-<!-- https://rzx007.github.io/docs/#/ -->
+<!-- https://r
+zx007.github.io/docs/#/ -->
 <!-- 启动命令 docsify serve docs -->
 <!-- 文档 https://docsify.js.org/#/zh-cn/quickstart -->
 <!-- gitlab与github密钥共存 https://www.freesion.com/article/9275938145/ -->

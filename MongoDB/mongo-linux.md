@@ -138,12 +138,12 @@ mongod -f /etc/mongod.conf
 db.auth('admin','123456')
 1
 ```
-添加一个当前库管理员，假设有一个eggems的数据库
+添加一个当前库管理员，假设有一个eggcms的数据库
 ```bash
-  use eggems
-  db.createUser( { user: "rzx100", pwd: "123456", roles: [ { role: "dbOwner", db: "eggems" } ] } )
+  use eggcms
+  db.createUser( { user: "eggadmin", pwd: "123456", roles: [ { role: "dbOwner", db: "eggcms" } ] } )
 ```
-那个`rzx100`这个用户就只能访问管理`eggems`这个库
+那个`rzx100`这个用户就只能访问管理`eggcms`这个库
 ### 7. Mongodb 常用命令
 
 ```
