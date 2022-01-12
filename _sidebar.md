@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: 阮志雄
- * @LastEditTime: 2021-07-26 11:24:48
+ * @LastEditTime: 2022-01-12 10:19:49
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -34,11 +34,10 @@
 	- [微前端框架是怎么导入加载子应用的](/mrico-front-end/how-work.md)
 - **Node框架**
 	-  [Koa2快速上手](Koa2/index.md)
-- **项目结构规范**
-	- [目录结构](/dir-standard.md)
-	- [ui框架和工具](/ui.md)
 - **前端主流开发框架**
 	- [开发框架](/frame.md)
+- **Docker**
+	- [前端Docker快速入门](Docker/quickly-start.md)
 - **Python学习**
 	-  [python基础](/python/py-basic.md)
 - **MongoDB**
@@ -48,3 +47,5 @@
 	-  [Dart快速入门](flutter/dart-basic.md)
 	-  [Dart 类 Class、继承、多态](flutter/dart-class.md)
 	-  [Dart 泛型方法、泛型类、泛型接口](flutter/dart-generic.md)
+- **其他**
+	-  [Centos7安装Nginx](Others/nginx.md)
