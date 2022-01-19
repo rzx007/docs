@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: 阮志雄
- * @LastEditTime: 2022-01-12 10:19:49
+ * @LastEditTime: 2022-01-18 20:22:27
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -19,6 +19,7 @@
 	- [js事件循环](/js/js-eventloop.md)
 	- [js常用es6+代码](/js/js-es6.md)
 	- [ts装饰器](/js/js-decorators.md)
+	- [手写promise](/js/promise.md)
 - **Vue 相关**
 	- [开发规范](/vue/vue.md)
 	- [vue-router动态加载](/vue/vue-router.md)
@@ -36,6 +37,10 @@
 	-  [Koa2快速上手](Koa2/index.md)
 - **前端主流开发框架**
 	- [开发框架](/frame.md)
+- **Java相关**
+	- [java注解](/Java/annotation.md)
+	- [java反射](/Java/java-relfect.md)
+	- [spring框架解释](/Java/spring.md)
 - **Docker**
 	- [前端Docker快速入门](Docker/quickly-start.md)
 - **Python学习**

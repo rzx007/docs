@@ -1,4 +1,4 @@
-
+<!-- https://blog.csdn.net/wdy0078/article/details/121902965?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-1-121902965.pc_agg_new_rank&utm_term=centos7%E5%AE%89%E8%A3%85nginx%E5%AE%8C%E6%95%B4&spm=1000.2123.3001.4430 -->
 ## CentOS7 安装 Nginx
 
 ### 1.下载软件包
