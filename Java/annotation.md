@@ -1,10 +1,11 @@
 ## Java 注解 （Annotation）
 
-> Java 注解（Annotation）又称 Java 标注，是 JDK5.0 引入的一种注释机制。
+> [Java](https://www.zhihu.com/question/21142149/answers/updated) 注解（Annotation）又称 Java 标注，是 JDK5.0 引入的一种注释机制。
 > Java 语言中的类、方法、变量、参数和包等都可以被标注。和 Javadoc 不同，Java 标注可以通过反射获取标注内容。在编译器生成类文件时，标注可以被嵌入到字节码中。Java 虚拟机可以保留标注内容，在运行时可以获取到标注内容 。 当然它也支持自定义 Java 标注。
 > 网上很多关于 Java Annotation 的文章，看得人眼花缭乱。Java Annotation 本来很简单的，结果说的人没说清楚；弄的看的人更加迷糊。
 > 我按照自己的思路，对 Annotation 进行了整理。理解 Annotation 的关键，是理解 Annotation 的语法和用法，对这些内容，我都进行了详细说明；理解 Annotation 的语法和用法之后，再看 Annotation 的框架图，可能有更深刻体会。废话就说这么多，下面开始对 Annotation 进行说明。
 
+?> 补充： [java怎么实现](https://www.zhihu.com/question/24401191)
 ### 内置的注解
 
 > Java 定义了一套注解，共有 7 个，3 个在 java.lang 中，剩下 4 个在 java.lang.annotation 中。

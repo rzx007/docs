@@ -20,3 +20,5 @@
  2. springMvc 是基于 Servlet 的一个 MVC 框架主要解决 WEB 开发的问题，因为 Spring 的配置非常复杂，各种 XML、JavaConfig、servlet 处理起来比较繁琐；
  3. 为了简化开发者的使用，从而创造性地推出了 springBoot 框架，默认优于配置，简化了 springMvc 的配置流程；但区别于 springMvc 的是，springBoot 专注于微服务方面的接口开发，和前端解耦，虽然 springBoot 也可以做成 springMvc 前后台一起开发，但是这就有点不符合 springBoot 框架的初衷了；
  4. 对于 springCloud 框架来说，它和 springBoot 一样，注重的是微服务的开发，但是 springCloud 更关注的是全局微服务的整合和管理，相当于管理多个 springBoot 框架的单体微服务；
+
+?> 补充 [spring-boot常用注解](https://www.cnblogs.com/fishpro/p/spring-boot-study-restcontroller.html)
