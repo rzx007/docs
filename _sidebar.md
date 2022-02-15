@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: 阮志雄
- * @LastEditTime: 2022-01-18 20:22:27
+ * @LastEditTime: 2022-02-15 19:28:53
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -41,6 +41,7 @@
 	- [java注解](/Java/annotation.md)
 	- [java反射](/Java/java-relfect.md)
 	- [spring框架解释](/Java/spring.md)
+	- [java代理](/Java/proxy.md)
 - **Docker**
 	- [前端Docker快速入门](Docker/quickly-start.md)
 - **Python学习**
