@@ -1,4 +1,5 @@
 ### 动态代理
+![架构](../static/proxy2.png)
 
 ```java
 
