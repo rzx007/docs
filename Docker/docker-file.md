@@ -169,6 +169,31 @@ ONBUILD [INSTRUCTION]
 
 ## DockerFile 实例
 
+### DockerFile 的指令
+
+```shell
+# FROM 表示设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。
+# 指定我们的基础镜像是node，latest表示版本是最新
+FROM 			# 基础镜像，一切从这里开始
+
+
+MAINTAINER	        # 镜像是谁写的
+RUN 			# 镜像构建是需要运行的命令
+ADD		        # 步骤
+
+
+# WORKDIR指令用于设置Dockerfile中的RUN、CMD和ENTRYPOINT指令执行命令的工作目录(默认为/目录)，该指令在Dockerfile文件中可以出现多次，如果使用相对路径则为相对于WORKDIR上一次的值，
+# 例如WORKDIR /data，WORKDIR logs，RUN pwd最终输出的当前目录是/data/logs。
+# cd到 /home/nodeNestjs
+WORKDIR			# 镜像的工作目录
+VOLUME			# 挂载的目录
+EXPOSE			# 保留端口配置
+CMD		        # 指定这个容器启动时要运行的命令，只有最后一个会生效
+ENTRYPOINT		# 指定这个容器启动时要运行的命令，可以追加命令
+COPY			# 类似ADD，将文件拷贝到镜像中
+ENV			# 构建时候设置的环境变量
+```
+
 ### 编写 DockerFile
 
 我有一个前端服务，目录结构如下：
@@ -195,6 +220,8 @@ RUN ls /build/myaccount/dist
 FROM nginx
 EXPOSE 80
 COPY --from=builder /build/myaccount/dist /usr/share/nginx/html
+
+CMD ["node", "-v"]
 ```
 
 需要注意结尾的 --from=builder 这里和开头是遥相呼应的。
@@ -205,6 +232,12 @@ COPY --from=builder /build/myaccount/dist /usr/share/nginx/html
 
 ```shell
 docker build [OPTIONS] PATH | URL | -
+```
+
+?> mydockerfile 是文件名
+
+```shell
+docker build -f mydockerfile -t mynode:0.1 .
 ```
 
 **常用 OPTION 如下**：：

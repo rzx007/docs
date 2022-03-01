@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: 阮志雄
- * @LastEditTime: 2022-02-16 11:26:34
+ * @LastEditTime: 2022-03-01 09:50:24
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -57,3 +57,4 @@
 	-  [Dart 泛型方法、泛型类、泛型接口](flutter/dart-generic.md)
 - **其他**
 	-  [Centos7安装Nginx](Others/nginx.md)
+	-  [知识图谱](Others/js-map.md)

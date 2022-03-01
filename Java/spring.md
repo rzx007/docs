@@ -22,3 +22,5 @@
  4. 对于 springCloud 框架来说，它和 springBoot 一样，注重的是微服务的开发，但是 springCloud 更关注的是全局微服务的整合和管理，相当于管理多个 springBoot 框架的单体微服务；
 
 ?> 补充 [spring-boot常用注解](https://www.cnblogs.com/fishpro/p/spring-boot-study-restcontroller.html)
+?> 补充 [超详细！4小时开发一个SpringBoot+vue前后端分离博客项目！！](https://www.zhuawaba.com/post/17)
+?>  [网络通信协议](http://www.52im.net/thread-1095-1-1.html)
