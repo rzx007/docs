@@ -59,6 +59,9 @@ class myPromise {
 
     }
   }
+  catch(onRejected) {
+    this.then(null, onRejected)
+  }
 }
 
 // 测试代码
