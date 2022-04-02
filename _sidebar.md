@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: 阮志雄
- * @LastEditTime: 2022-03-22 16:03:29
+ * @LastEditTime: 2022-04-02 10:58:02
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -28,6 +28,7 @@
 	- [render函数](/vue/vue-render-function.md)
 	- [浅析虚拟dom原理并实现](/vue/vue-vritual-dom.md)
 	- [Vue3.0](/vue/vue3.0.md)
+	- [vue3.2 自定义弹窗组件+函数式调用二合一](/vue/vue3.0-Dialog.md)
 - **React 相关**
 	- [Redux 使用流程与个人心得](/react/re-redux.md)		
 - **Angular 相关**
