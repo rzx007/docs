@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: 阮志雄
- * @LastEditTime: 2022-04-02 10:58:02
+ * @LastEditTime: 2022-04-07 14:33:39
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -21,6 +21,7 @@
 	- [ts装饰器](/js/js-decorators.md)
 	- [手写promise](/js/promise.md)
 	- [36 个 JS 手写题](/js/js-tools.md)
+	- [iFrame相关](/js/iFrame.md)
 - **Vue 相关**
 	- [开发规范](/vue/vue.md)
 	- [vue-router动态加载](/vue/vue-router.md)
