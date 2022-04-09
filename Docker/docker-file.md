@@ -1,6 +1,6 @@
 ## Dockerfile 简介
 
-?> Dockerfile 是 Docker 中用来自动化构建镜像的配置文件，在 Dockerfile 中，包含了构建镜像过程中需要执行的命令、参数以及其他操作，并且支持以#开头的注释行。
+?> Dockerfile 是 Docker 中用来自动化构建镜像的配置文件，在 Dockerfile 中，包含了构建镜像过程中需要执行的命令、参数以及其他操作，并且支持以#开头的注释行。更多详情查阅[Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 
 `Dockerfile`结构大致分为四部分：
 
