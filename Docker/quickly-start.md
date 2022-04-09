@@ -136,39 +136,45 @@ node:10.16.2 \
 
 参数解析：
 
-| 参数 | 描述 |
-| ---- | :--: |
-| -d   |  以守护进程的方式让容器在后台运行，在这您之 前可能使用的是pm2来守护进程  |
-| -it  |  这里是 -i和 -t的缩写 -i：告诉 Docker 容器保持标准输入流对容器开放,即使容器没有终端连接 告诉 Docker 为容器分配一个虚拟终端  |
-| --name myvue2 |  **将容器命名为 myvue2，这样访问和操作容 器等就不需要输入一大串的容器ID**  |
-| --privileged  | 让容器的用户在容器内能获取完全root权限|
-| --p 8081:8080  | 将容器的8080端口映射到宿主机的8081端口上这样我们访问本机的localhost:8081,就是访问到容器的8080端口因为容器都是独立运行互相隔离的，容器与容器各自的8080端口、容器跟主机各自的8080端口都不是一个东西，主机只有在这给端口做映射才能访问到容器端口|
-| -v /Users/eric/my-repository/my-app-vue2:/app/vue | 将主机的my-app-vue2目录(命令行这里只能写绝对路径哈)下的内容挂载到容器的目录/app/vue内，如果容器的指定目录有文件/文件夹，将被清空挂载后，容器修改 /app/vue目录的内容，也是在修改主机目录/Users/eric/my-repository/my-app-vue2内容 |
-| node:10.16.2 | 这里是指定nodejs，版本为10.16.2的镜像来创建容器,如果不指定版本，会默认下载当前镜像的最新版本 |
-| /bin/bash -c "cd /app/vue2 && node -v && npm install && npm run serve" | /bin/bash：是在让容器分配的虚拟终端以 bash 模式执行命令 -c ""cd /app/vue2 && node -v && npm install && npm run serve：只能执行一条 shell 命令，需要多个命令按需用&&、 |
+| 参数                                                                   |                                                                                                                           描述                                                                                                                           |
+| ---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| -d                                                                     |                                                                                         以守护进程的方式让容器在后台运行，在这您之 前可能使用的是 pm2 来守护进程                                                                                         |
+| -it                                                                    |                                                               这里是 -i 和 -t 的缩写 -i：告诉 Docker 容器保持标准输入流对容器开放,即使容器没有终端连接 告诉 Docker 为容器分配一个虚拟终端                                                                |
+| --name myvue2                                                          |                                                                                        **将容器命名为 myvue2，这样访问和操作容 器等就不需要输入一大串的容器 ID**                                                                                         |
+| --privileged                                                           |                                                                                                         让容器的用户在容器内能获取完全 root 权限                                                                                                         |
+| --p 8081:8080                                                          | 将容器的 8080 端口映射到宿主机的 8081 端口上这样我们访问本机的 localhost:8081,就是访问到容器的 8080 端口因为容器都是独立运行互相隔离的，容器与容器各自的 8080 端口、容器跟主机各自的 8080 端口都不是一个东西，主机只有在这给端口做映射才能访问到容器端口 |
+| -v /Users/eric/my-repository/my-app-vue2:/app/vue                      |          将主机的 my-app-vue2 目录(命令行这里只能写绝对路径哈)下的内容挂载到容器的目录/app/vue 内，如果容器的指定目录有文件/文件夹，将被清空挂载后，容器修改 /app/vue 目录的内容，也是在修改主机目录/Users/eric/my-repository/my-app-vue2 内容           |
+| node:10.16.2                                                           |                                                                             这里是指定 nodejs，版本为 10.16.2 的镜像来创建容器,如果不指定版本，会默认下载当前镜像的最新版本                                                                              |
+| /bin/bash -c "cd /app/vue2 && node -v && npm install && npm run serve" |                                          /bin/bash：是在让容器分配的虚拟终端以 bash 模式执行命令 -c ""cd /app/vue2 && node -v && npm install && npm run serve：只能执行一条 shell 命令，需要多个命令按需用&&、                                           |
 
-##### **docker run的运行示意图**
+##### **docker run 的运行示意图**
+
 ![dir](../static/docker-run.jpg)
 
 ### 调试命令
 
 **常用的调试命令**
+
 ```bash
 # 运行后按ctrl + c 可退出
 docker logs -f contianer_name/container_id
 ```
+
 当然容器内正在进行编译或者发生错误甚至退出的时候，我们可用此命令查看终端输出的信息
 
 运行成功后，查看`myvue` 容器的`npm run serve` 在终端上的实时输出信息
+
 ```bash
-#查看docker container的终端输出信息 
+#查看docker container的终端输出信息
 docker logs -f myvue2
 
 ```
+
 ```basg
 # 打印出容器的端口映射、目录挂载、网络等等
 docker inspect myvue2
 ```
+
 ### 常用操作命令
 
 ?> 常用的操作命令表一栏
@@ -199,7 +205,9 @@ docker history [images_name]
  docker rmi [images_name]
 
 ```
+
 ### 容器操作命令
+
 ```bash
 # 查看运行中的容器
 # 可以查看容器ID、基础镜像、容器名称、运行状态、端口映射等
@@ -221,6 +229,24 @@ docker start/stop [container_name/container_id]
 #  nginx容器的配置更新后需要重启生效
 docker restart [container_name/container_id]
 
+# docker commit :从容器创建一个新的镜像。
+docker commit [OPTIONS] CONTAINER_ID [REPOSITORY[:TAG]]
+
+OPTIONS说明：
+
+  -a :提交的镜像作者；
+
+  -c :使用Dockerfile指令来创建镜像；
+
+  -m :提交时的说明文字；
+
+ -p :在commit时，将容器暂停。
+
+
+实例: 将容器a404c6c174a2 保存为新的镜像,并添加提交人信息和说明信息。
+
+docker commit -a "rzx007" -m "my apache" a404c6c174a2  mymysql:v1 
+
 # 进入容器
 # ps:有些容器没有bash,需要改成/bin/sh，例如mysq、mongodb的
 # 退出人容器输入exit 回车键
@@ -239,10 +265,11 @@ docker cp [主机目录] [container_id/container_name] : [文件目录]
 
 
 ```
+
 ### 进阶
 
-如果没有合适的镜像，我们通常用Dockerfile来构建自定义镜像
+如果没有合适的镜像，我们通常用 Dockerfile 来构建自定义镜像
 
-发现没，上面的docker run 只能创建启动一个docker容器，我们可以用docker-compose来一次启动多个容器，常用于单机下安装多个服务
+发现没，上面的 docker run 只能创建启动一个 docker 容器，我们可以用 docker-compose 来一次启动多个容器，常用于单机下安装多个服务
 
-慢点再来更新，大家有兴趣也可以先看到我用docker 部署的[Jenkins自动化部署 CI/CD 环境](https://juejin.cn/post/6867861517603438605) 里面也有docker-compose的使用
+慢点再来更新，大家有兴趣也可以先看到我用 docker 部署的[Jenkins 自动化部署 CI/CD 环境](https://juejin.cn/post/6867861517603438605) 里面也有 docker-compose 的使用
