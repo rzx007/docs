@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: 阮志雄
- * @LastEditTime: 2022-04-07 14:33:39
+ * @LastEditTime: 2022-04-13 14:13:00
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -50,6 +50,7 @@
 - **Docker**
 	- [前端Docker快速入门](Docker/quickly-start.md)
 	- [DockerFile](Docker/docker-file.md)
+	- [GitLab+Docker 快速搭建 CI/CD 自动化部署(扫盲篇)](Docker/gitlab-ci.md)
 - **Python学习**
 	-  [python基础](/python/py-basic.md)
 - **MongoDB**
