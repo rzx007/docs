@@ -2,7 +2,7 @@
  * @Author: rzx007
  * @Date: 2019-09-02 14:00:43
  * @LastEditors: 阮志雄
- * @LastEditTime: 2022-04-13 14:48:45
+ * @LastEditTime: 2022-08-04 15:38:08
  * @FilePath: \docs\_sidebar.md
  * @Description: Do not edit
 -->
@@ -19,6 +19,7 @@
 	- [js事件循环](/js/js-eventloop.md)
 	- [js常用es6+代码](/js/js-es6.md)
 	- [ts装饰器](/js/js-decorators.md)
+	- [Reflect Metadata](/js/reflect-matedata.md)
 	- [手写promise](/js/promise.md)
 	- [36 个 JS 手写题](/js/js-tools.md)
 	- [iFrame相关](/js/iFrame.md)
