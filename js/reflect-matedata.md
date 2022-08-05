@@ -112,7 +112,7 @@ Reflect.getMetadata("methodMetaData", new SomeClass(), "someMethod"); // 'b'
 
 #### 控制反转和依赖注入
 
-在 Angular 2+ 的版本中，控制反转与依赖注入便是基于此实现，现在，我们来实现一个简单版：
+在 Angular 2+ 的版本中，[控制反转](https://blog.csdn.net/sinat_21843047/article/details/80297951)与依赖注入便是基于此实现，现在，我们来实现一个简单版：
 
 ```js
 type Constructor<T = any> = new (...args: any[]) => T;
