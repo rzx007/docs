@@ -138,7 +138,6 @@ const Factory = <T>(target: Constructor<T>): T => {
   const args = providers.map((provider: Constructor) => new provider());
   return new target(...args);
 };
-
 Factory(TestService).testMethod(); // 1
 ```
 #### Controller 与 Get 的实现
@@ -198,6 +197,13 @@ function mapRoute(instance: Object) {
     }
   })
 };
+function isFunction(arg: any): boolean {
+    return typeof arg === 'function';
+}
+
+function isConstructor(arg: string) {
+    return arg === 'constructor';
+}
 ```
 因此，我们可以得到一些有用的信息：
 ```js
