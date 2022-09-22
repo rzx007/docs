@@ -1,11 +1,3 @@
-<!--
- * @Author: rzx007
- * @Date: 2019-09-02 14:00:43
- * @LastEditors: 阮志雄
- * @LastEditTime: 2022-08-04 15:38:08
- * @FilePath: \docs\_sidebar.md
- * @Description: Do not edit
--->
 - **HTML 相关**
 	- [html规范](/html/html-standard.md)
 - **CSS 相关**
@@ -61,6 +53,8 @@
 	-  [Dart快速入门](flutter/dart-basic.md)
 	-  [Dart 类 Class、继承、多态](flutter/dart-class.md)
 	-  [Dart 泛型方法、泛型类、泛型接口](flutter/dart-generic.md)
+- **WbGis相关**
+	-  [WbGis相关概念](gis/gis-basic.md)
 - **其他**
 	-  [Centos7安装Nginx](Others/nginx.md)
 	-  [Linux安装nodejs](Linux/content.md)
