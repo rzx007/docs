@@ -167,8 +167,8 @@ const Controller = (path: string): ClassDecorator => {
 
 const createMappingDecorator = (method: string) => (path: string): MethodDecorator => {
   return (target, key, descriptor) => {
-    Reflect.defineMetadata(PATH_METADATA, path, descriptor.value);
-    Reflect.defineMetadata(METHOD_METADATA, method, descriptor.value);
+    Reflect.defineMetadata(PATH_METADATA, path, target, key);
+    Reflect.defineMetadata(METHOD_METADATA, method, target, key);
   }
 }
 
@@ -187,8 +187,8 @@ function mapRoute(instance: Object) {
     const fn = prototype[methodName];
 
     // 取出定义的 metadata
-    const route = Reflect.getMetadata(PATH_METADATA, fn);
-    const method = Reflect.getMetadata(METHOD_METADATA, fn)；
+    const route = Reflect.getMetadata(PATH_METADATA, instance, methodName);
+    const method = Reflect.getMetadata(METHOD_METADATA, instance, methodName)；
     return {
       route,
       method,
