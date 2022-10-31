@@ -1,6 +1,6 @@
 ## koa2+koa-router以及koa脚手架的使用（koa-generator）
 
-?> 介绍从开始搭建Koa2开发环境和koa脚手架的使用搭建两种方式,对于项目开发推荐使用脚手架搭建
+?> [Node](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)介绍从开始搭建Koa2开发环境和koa脚手架的使用搭建两种方式,对于项目开发推荐使用脚手架搭建
 
 ### Koa2基础
 #### 安装
