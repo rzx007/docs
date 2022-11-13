@@ -117,9 +117,13 @@ export class Model {
   geometry!: THREE.BufferGeometry;
   material!: THREE.Material;
   model!: THREE.Mesh
-  animate = () => {}
+  animate = () => { }
 }
-
+export type ModelParameters = {
+  geometry?: THREE.BoxGeometry;
+  material?: THREE.Material;
+  animateSwitch?: boolean
+}
 export default class Cube extends Model {
   // 创建几何体
   geometry: THREE.BoxGeometry
@@ -130,16 +134,23 @@ export default class Cube extends Model {
   // 完整的几何体
   model: THREE.Mesh
 
+  // 是否动画
+  animateSwitch: boolean
+
   animate = () => {
-    this.model.rotation.x += 0.01
-    this.model.rotation.y += 0.01
-    this.model.rotation.z += 0.01
+    if (this.animateSwitch) {
+      this.model.rotation.x += 0.01
+      this.model.rotation.y += 0.01
+      this.model.rotation.z += 0.01
+    }
+
   }
 
-  constructor(geometry?: THREE.BoxGeometry, material?: THREE.Material) {
+  constructor(props: ModelParameters = { animateSwitch: true }) {
     super()
-    this.geometry = geometry || new THREE.BoxGeometry(2, 2, 2)
-    this.material = material || new THREE.MeshBasicMaterial({
+    this.animateSwitch = !!props.animateSwitch
+    this.geometry = props.geometry || new THREE.BoxGeometry(2, 2, 2)
+    this.material = props.material || new THREE.MeshBasicMaterial({
       color: 0x0000ff,
       wireframe: true
     })
