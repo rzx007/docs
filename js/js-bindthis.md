@@ -253,3 +253,6 @@ qsa(something);
 var slice = Function.prototype.call.bind(Array.prototype.slice);
 slice(arguments);
 ```
+
+!>效果如下
+![three2](../static//three2.png)
