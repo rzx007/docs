@@ -265,7 +265,8 @@ docker cp [主机目录] [container_id/container_name] : [文件目录]
 
 
 ```
-
+### 任务 docker部署nginx，并配置好
+[https://www.cnblogs.com/chuyi-/p/15201718.html](https://www.cnblogs.com/chuyi-/p/15201718.html)
 ### 进阶
 
 如果没有合适的镜像，我们通常用 Dockerfile 来构建自定义镜像

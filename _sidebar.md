@@ -62,3 +62,4 @@
 	-  [Centos7安装Nginx](Others/nginx.md)
 	-  [Linux安装nodejs](Linux/content.md)
 	-  [知识图谱](Others/js-map.md)
+	-  [ace-editor快速使用](Others/ace-editor.md)
