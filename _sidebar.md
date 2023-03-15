@@ -11,6 +11,7 @@
 	- [js事件循环](/js/js-eventloop.md)
 	- [js常用es6+代码](/js/js-es6.md)
 	- [ts装饰器](/js/js-decorators.md)
+	- [ts-tsconfig](/js/js-tsconfig.md)
 	- [Reflect Metadata](/js/reflect-matedata.md)
 	- [手写promise](/js/promise.md)
 	- [36 个 JS 手写题](/js/js-tools.md)
