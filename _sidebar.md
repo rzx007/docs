@@ -16,6 +16,7 @@
 	- [手写promise](/js/promise.md)
 	- [36 个 JS 手写题](/js/js-tools.md)
 	- [iFrame相关](/js/iFrame.md)
+	- [前端必须掌握的7种设计模式](/js/js-design-pattern.md)
 - **Vue 相关**
 	- [开发规范](/vue/vue.md)
 	- [vue-router动态加载](/vue/vue-router.md)
