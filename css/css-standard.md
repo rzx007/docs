@@ -77,6 +77,14 @@ input:focus + .popTips{
   transition: transform .4s cubic-bezier(.29, .15, .5, 1.46);
 }
 ```
+### css3辅助网格
+```css3
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(90deg, #ccc 1px, transparent 0), linear-gradient(#ccc 5%, transparent 0);
+  background-size: 15px 15px;
+  background-repeat: repeat;
+```
 ### CSS样式表文件命名参考
 1. `全局：global.css`
  全局样式为全站公用，为页面样式基础，页面中必须包含。
