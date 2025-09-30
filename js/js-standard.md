@@ -58,7 +58,7 @@ function foo2(name){
 /** 
  * @param author:'阮志雄'，
  * @param fearures：'Supplementary power'
- * @param company:'BobanData'
+ * @param company:'**'
  * @param date:'2018-06-24 13:14'
 */
 import $areaId from "@/assets/config/areaMap";
